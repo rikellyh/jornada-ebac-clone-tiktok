@@ -12,3 +12,63 @@ video {
 .video-player {
   object-fit: fill;
 }
+
+.container-video {
+  position: relative;
+  bottom: 12.5rem;
+  color: #ffff;
+  margin-left: 1.25rem;
+}
+
+.text h3 {
+  padding-bottom: 1.25rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.text p {
+  padding-bottom: 1.25rem;
+}
+
+.music-details {
+  display: flex;
+}
+
+.record-icon {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1.25rem;
+  height: 3rem;
+  // animation: spin 3s infinite linear;
+}
+
+.record-icon svg {
+  font-size: 2.85rem;
+}
+
+.title-music {
+  width: 80%;
+  overflow-x: hidden;
+}
+
+.title-music p {
+  animation: moveText 3s infinite linear;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */

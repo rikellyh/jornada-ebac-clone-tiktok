@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import meuVideo from '../../assets/comprinhas.mp4';
 import '../../styles/section.css';
+import VideoFooter from '../../components/Footer/VideoFooter';
 
 function SectionVideo() {
   const videoRef = useRef(null);
@@ -25,6 +26,7 @@ function SectionVideo() {
         loop
         src={meuVideo}
       ></video>
+      <VideoFooter />
     </div>
   );
 }
