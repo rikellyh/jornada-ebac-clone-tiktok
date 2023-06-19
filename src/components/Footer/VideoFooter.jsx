@@ -1,16 +1,17 @@
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import AlbumIcon from '@mui/icons-material/Album';
 
-function VideoFooter() {
+// eslint-disable-next-line react/prop-types
+function VideoFooter({ name, description, music }) {
   return (
     <div className='container-video'>
       <div className='text'>
-        <h3>@user</h3>
-        <p>Descrição</p>
+        <h3>@{name}</h3>
+        <p>{description}</p>
         <div className='music-details'>
           <MusicNoteIcon />
           <div className='title-music'>
-            <p>Título da música</p>
+            <p>{music}</p>
           </div>
         </div>
       </div>

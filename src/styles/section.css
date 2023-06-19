@@ -52,7 +52,7 @@ video {
 }
 
 .title-music p {
-  animation: moveText 3s infinite linear;
+  animation: moveText 5s infinite linear;
 }
 
 @keyframes moveText {
@@ -72,3 +72,16 @@ video {
     transform: rotate(360deg);
   }
 } */
+
+.video-sidebar {
+  position: absolute;
+  right: 1rem;
+  left: 27rem;
+  top: 50%;
+  color: #ffff;
+}
+
+.options {
+  padding: 1.25rem;
+  text-align: center;
+}

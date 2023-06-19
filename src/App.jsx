@@ -6,7 +6,14 @@ function App() {
     <>
       <div className='App'>
         <div className='app-videos'>
-          <SectionVideo />
+          <SectionVideo
+            likes={100}
+            messages={200}
+            shares={300}
+            name='KellyJoestar'
+            description='Comprinhas na Urbanic'
+            music='Sia - Unstoppable Instrumental'
+          />
         </div>
       </div>
     </>

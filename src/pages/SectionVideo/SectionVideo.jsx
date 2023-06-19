@@ -2,8 +2,10 @@ import { useRef, useState } from 'react';
 import meuVideo from '../../assets/comprinhas.mp4';
 import '../../styles/section.css';
 import VideoFooter from '../../components/Footer/VideoFooter';
+import VideoSidebar from '../../components/Sidebar/VideoSidebar';
 
-function SectionVideo() {
+// eslint-disable-next-line react/prop-types
+function SectionVideo({ likes, message, shares, name, description, music }) {
   const videoRef = useRef(null);
   const [play, setPlay] = useState(false);
 
@@ -26,7 +28,8 @@ function SectionVideo() {
         loop
         src={meuVideo}
       ></video>
-      <VideoFooter />
+      <VideoSidebar likes={likes} message={message} shares={shares} />
+      <VideoFooter name={name} description={description} music={music} />
     </div>
   );
 }
