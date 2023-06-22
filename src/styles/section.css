@@ -1,4 +1,4 @@
-video,
+.video,
 .video-player {
   height: 100%;
   width: 100%;
@@ -6,6 +6,9 @@ video,
 
 video {
   scroll-snap-align: start;
+}
+
+.video {
   position: relative;
 }
 
@@ -15,7 +18,7 @@ video {
 
 .container-video {
   position: relative;
-  bottom: 12.5rem;
+  bottom: 9.5rem;
   color: #ffff;
   margin-left: 1.25rem;
 }
@@ -75,13 +78,17 @@ video {
 
 .video-sidebar {
   position: absolute;
-  right: 1rem;
+  right: 0.75rem;
   left: 27rem;
-  top: 50%;
+  top: 10rem;
   color: #ffff;
 }
 
 .options {
-  padding: 1.25rem;
+  padding: 1.25rem 0;
   text-align: center;
+}
+
+.options p {
+  padding-top: 0.5rem;
 }

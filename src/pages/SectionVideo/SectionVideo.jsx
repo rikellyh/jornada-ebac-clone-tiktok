@@ -1,11 +1,18 @@
+/* eslint-disable react/prop-types */
 import { useRef, useState } from 'react';
-import meuVideo from '../../assets/comprinhas.mp4';
 import '../../styles/section.css';
 import VideoFooter from '../../components/Footer/VideoFooter';
 import VideoSidebar from '../../components/Sidebar/VideoSidebar';
 
-// eslint-disable-next-line react/prop-types
-function SectionVideo({ likes, message, shares, name, description, music }) {
+function SectionVideo({
+  likes,
+  messages,
+  shares,
+  name,
+  description,
+  music,
+  url,
+}) {
   const videoRef = useRef(null);
   const [play, setPlay] = useState(false);
 
@@ -26,9 +33,9 @@ function SectionVideo({ likes, message, shares, name, description, music }) {
         ref={videoRef}
         onClick={handdleStart}
         loop
-        src={meuVideo}
+        src={url}
       ></video>
-      <VideoSidebar likes={likes} message={message} shares={shares} />
+      <VideoSidebar likes={likes} messages={messages} shares={shares} />
       <VideoFooter name={name} description={description} music={music} />
     </div>
   );
